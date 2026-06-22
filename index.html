@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客 | 无人机与代码的探索之旅</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">✈️ TechBlog</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#articles" class="nav-link">文章</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    你好，我是 <span class="highlight">无人机爱好者</span>
+                </h1>
+                <p class="hero-subtitle">
+                    北航无人机专业 · 探索飞行与代码的无限可能
+                </p>
+                <div class="hero-tags">
+                    <span class="tag">🛩️ 飞控开发</span>
+                    <span class="tag">💻 嵌入式系统</span>
+                    <span class="tag">🔧 STM32</span>
+                    <span class="tag">📐 数学建模</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#articles" class="btn btn-primary">阅读文章</a>
+                    <a href="#projects" class="btn btn-secondary">查看项目</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-icon">🚁</div>
+                    <div class="card-text">
+                        <h3>飞行控制</h3>
+                        <p>PID调参 · 姿态解算</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-1">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">
+                        <h3>嵌入式开发</h3>
+                        <p>STM32 · ESP32</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-2">
+                    <div class="card-icon">📊</div>
+                    <div class="card-text">
+                        <h3>数据可视化</h3>
+                        <p>飞行日志分析</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+    <!-- 关于我 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="avatar-placeholder">
+                        <span class="avatar-icon">👨‍💻</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>热爱技术，热爱飞行</h3>
+                    <p>
+                        我是一名北京航空航天大学无人机专业的大一学生，对无人机技术和嵌入式开发充满热情。
+                        从第一次接触飞控代码开始，我就深深着迷于那些让无人机翱翔天空的算法与逻辑。
+                    </p>
+                    <p>
+                        在学习之余，我喜欢动手实践各种项目，从 STM32 飞控开发到 Linux 系统运维，
+                        每一次调试成功的瞬间都让我倍感成就。这个博客记录了我的学习历程和技术思考。
+                    </p>
+                    <div class="skills">
+                        <h4>技术栈</h4>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">C/C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">STM32</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Linux</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 文章列表 -->
+    <section id="articles" class="section articles-section">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+            <p class="section-subtitle">记录学习路上的点滴思考</p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <span class="article-emoji">🛩️</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">2026年6月</span>
+                            <span class="article-category">飞控开发</span>
+                        </div>
+                        <h3 class="article-title">PID 调参入门：从理论到实践</h3>
+                        <p class="article-excerpt">
+                            详细介绍 PID 控制算法的基本原理，以及在无人机飞控中的实际调参经验，
+                            包括比例、积分、微分三个参数各自的作用和调试技巧...
+                        </p>
+                        <a href="#" class="article-link">阅读全文 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <span class="article-emoji">🔧</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">2026年5月</span>
+                            <span class="article-category">嵌入式</span>
+                        </div>
+                        <h3 class="article-title">STM32 飞控移植笔记</h3>
+                        <p class="article-excerpt">
+                            记录将开源飞控固件移植到自制 STM32 飞控板的全过程，
+                            包括硬件连接、驱动适配、传感器校准等关键步骤...
+                        </p>
+                        <a href="#" class="article-link">阅读全文 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <span class="article-emoji">📐</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">2026年4月</span>
+                            <span class="article-category">数学</span>
+                        </div>
+                        <h3 class="article-title">四元数与姿态解算详解</h3>
+                        <p class="article-excerpt">
+                            深入理解四元数在无人机姿态解算中的应用，
+                            从欧拉角到四元数的转换，以及互补滤波和卡尔曼滤波的对比...
+                        </p>
+                        <a href="#" class="article-link">阅读全文 →</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <span class="article-emoji">🐧</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">2026年3月</span>
+                            <span class="article-category">Linux</span>
+                        </div>
+                        <h3 class="article-title">我的 Linux 开发环境配置</h3>
+                        <p class="article-excerpt">
+                            分享我日常使用的 Kubuntu 开发环境配置，
+                            包括终端美化、工具链安装、IDE 配置等提升效率的技巧...
+                        </p>
+                        <a href="#" class="article-link">阅读全文 →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- 项目展示 -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">项目作品</h2>
+            <p class="section-subtitle">动手实践，学以致用</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🚁</span>
+                        <h3>自制四旋翼飞控</h3>
+                    </div>
+                    <p class="project-description">
+                        基于 STM32F4 设计的自制飞控板，实现基本的自稳飞行功能，
+                        支持 MPU6050 陀螺仪和气压计。
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">STM32</span>
+                        <span class="project-tag">PID</span>
+                        <span class="project-tag">PCB设计</span>
+                    </div>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">📡</span>
+                        <h3>无人机数传系统</h3>
+                    </div>
+                    <p class="project-description">
+                        基于 ESP32 的无人机数传模块，实现飞行数据实时回传和地面站显示，
+                        支持遥测和简单的指令下发。
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">ESP32</span>
+                        <span class="project-tag">WiFi</span>
+                        <span class="project-tag">Python</span>
+                    </div>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">📊</span>
+                        <h3>飞行日志分析工具</h3>
+                    </div>
+                    <p class="project-description">
+                        用 Python 编写的飞行日志可视化工具，支持分析飞行数据、
+                        绘制姿态曲线和振动分析。
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Matplotlib</span>
+                        <span class="project-tag">数据分析</span>
+                    </div>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="section-subtitle">欢迎交流技术，一起探讨</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>your-email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>@your-username</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>位置</h4>
+                            <p>北京 · 海淀</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="你的名字" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="你的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="想说的话..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>✈️ TechBlog</h3>
+                    <p>记录无人机与代码的探索之旅</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">知乎</a>
+                        <a href="#" class="social-link">B站</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechBlog. Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top" title="回到顶部">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
